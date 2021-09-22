@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, 松山院">
+    <meta name="keywords" content="黑白盒测试笔记, 松山院">
     <meta name="description" content="松山院">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | 松山院</title>
+    <title>黑白盒测试笔记 | 松山院</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -317,7 +317,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">黑白盒测试笔记</h1>
                 </div>
             </div>
         </div>
@@ -431,12 +431,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/lkr/">
+                                <span class="chip bg-color">lkr</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%B5%8B%E8%AF%95/">
+                                <span class="chip bg-color">测试</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                                笔记
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -445,7 +462,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-09-16
+                    2021-09-22
                 </div>
                 
 
@@ -469,19 +486,53 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+                <h1 id="初学黑白盒测试"><a href="#初学黑白盒测试" class="headerlink" title="初学黑白盒测试"></a>初学黑白盒测试</h1><p>初学测试，后续会不断补充更新</p>
+<h3 id="一、黑白盒测试"><a href="#一、黑白盒测试" class="headerlink" title="一、黑白盒测试"></a>一、黑白盒测试</h3><ul>
+<li><p>黑盒测试</p>
+<p><em><strong>1、概述</strong></em></p>
+<p>黑盒测试也称功能测试或数据驱动测试，它是在已知产品所应具有的功能，通过测试来检验每个功能都是否能够正常使用。</p>
+<p>在测试时，把程序看作一个不能打开的黑盒子，在完全不考虑程序内部结构和内部特性的情况下，测试人员进行直接测试，检查系统功能是否按照需求规格说明书的规定正常使用、是否能适当的接收输入数据而输出正确的结果等，检查相应的文档是否采用了正确的模板、是否满足规范需求。</p>
+<p><em><strong>2、黑盒的两种基本方法</strong></em></p>
+<p>黑盒测试有两种基本方法，即“通过测试”和“失败测试”</p>
+<p>通过测试：在进行“通过测试”时，实际上是确认软件能做什么，而不会考验其能力如何。</p>
+<p>失败测试：在确信了软件正确运行之后，就可以采取各种手段通过搞垮软件来找出缺陷。纯粹为了破坏软件而设计和执行的测试案例，被称为失败测试或迫使出错测试</p>
+<p><em><strong>3、黑盒测试的优缺点</strong></em></p>
+<p>优点：</p>
+<p>a.比较简单，不需要了解程序内部的代码以及实现。</p>
+<p>b.与软件内部实现无关。</p>
+<p>c.从用户角度出发，很容易的知道用户会用到哪些功能，会遇到哪些问题。</p>
+<p>d.在做软件自动化测试时较为方便。</p>
+<p>e.基于软件开发文档，所以也能知道软件实现了文档中的哪些功能。</p>
+<p>缺点：</p>
+<p>a.不可能覆盖所有代码，覆盖率较低，大概只能达到总代码量的30%。</p>
+<p>b.自动化测试的复用性较低。</p>
+</li>
+<li><p>白盒测试</p>
+<p><em><strong>1、概述</strong></em></p>
+<p>白盒测试又称透明盒测试、逻辑驱动测试；</p>
+<p>是测试被测单元内部如何工作的一种测试方法；</p>
+<p>根据程序内部逻辑结构及有关信息来设计和选择测试用例，对程序的逻辑结构进行测试；</p>
+<p>可覆盖全部代码、分支、条件和路径等；</p>
+<p><em><strong>2、白盒测试的目的</strong></em></p>
+<p>保证程序中所有关键路径的测试,防止由于没有执行的路径在实际投入运行后执行到发生意外的情况；<br>衡量测试完整性；<br>程序内部所有的逻辑值真、假两个分支的覆盖；<br>检查内存泄漏；<br>异常处理的分支语句的执行；<br>解决实验条件下很难搭建真实测试环境的问题；<br>检查代码符合一定的编码规范，减少由于编码不规范而引入错误。</p>
+<p><em><strong>3、白盒测试</strong></em></p>
+<p>优点：帮助软件测试人员增大代码的覆盖率，提供代码的质量，发现代码中隐藏的问题</p>
+<p>缺点：</p>
+<p>a.程序运行回有很多不同的路径，不可能测试所有的运行路径</p>
+<p>b.测试基于代码，只能测试开发人员做的对不对，而不能知道设计是否正确，可能会漏掉一些功能需求</p>
+<p>c.系统庞大时，测试开销会非常大</p>
+</li>
+</ul>
+<h3 id="二、黑盒测试的方法"><a href="#二、黑盒测试的方法" class="headerlink" title="二、黑盒测试的方法"></a>二、黑盒测试的方法</h3><ul>
+<li>等价类划分方法</li>
+<li>边界值分析方法</li>
+<li>错误推测方法</li>
+<li>因果图方法</li>
+<li>判定表驱动分析方法</li>
+<li>正交实验设计方法</li>
+<li>功能图分析方法</li>
+<li>场景设计方法</li>
+</ul>
 
                 
             </div>
@@ -508,7 +559,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ssy.wiki/2021/09/16/hello-world/">https://ssy.wiki/2021/09/16/hello-world/</a>
+                    <a href="https://ssy.wiki/2021/09/22/hei-bai-he-ce-shi-bi-ji/">https://ssy.wiki/2021/09/22/hei-bai-he-ce-shi-bi-ji/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -545,7 +596,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/lkr/">
+                                    <span class="chip bg-color">lkr</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%B5%8B%E8%AF%95/">
+                                    <span class="chip bg-color">测试</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -719,13 +778,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/09/18/servlet/">
+                <a href="/2021/09/22/xiao-cheng-xu-zi-ding-yi-ding-bu-dao-hang-he-jiu-gong-ge/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Servlet">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="小程序自定义顶部导航和九宫格">
                         
-                        <span class="card-title">Servlet</span>
+                        <span class="card-title">小程序自定义顶部导航和九宫格</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -736,15 +795,31 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-09-18
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-09-22
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            松山院
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%95%99%E7%A8%8B/" class="post-category">
+                                    教程
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/">
+                        <span class="chip bg-color">微信小程序</span>
+                    </a>
+                    
+                    <a href="/tags/zml/">
+                        <span class="chip bg-color">zml</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -753,16 +828,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/09/16/hello-world/">
+                <a href="/2021/09/22/servlet-xue-xi-bi-ji/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Servlet学习笔记">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">Servlet学习笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -773,17 +848,32 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-22
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            松山院
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    笔记
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/servlet/">
+                        <span class="chip bg-color">servlet</span>
+                    </a>
+                    
+                    <a href="/tags/syb/">
+                        <span class="chip bg-color">syb</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
